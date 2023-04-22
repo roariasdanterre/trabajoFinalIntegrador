@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body {
-    height: 100vh;
-    background-image: linear-gradient( to bottom, #80d0c7 0%, #13547a 100%);
+    background-image: linear-gradient(  #80d0c7 0%, #13547a 100%);
     background-repeat: no-repeat;
 }
-/*API*/
 
 /*FORMULARIO*/
 #nombre, #email, #telefono, #mensaje {
@@ -15,6 +20,9 @@ label {
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
 }
+
+
+
 
 /*FOOTER*/
 
