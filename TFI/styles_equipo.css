@@ -5,7 +5,8 @@
 .fondoEquipo {
     background-image: url("./vecteezy_rainy-weather-and-puddle-on-suburban-street-road_21935390.jpg");
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
+    background-position: center;
 }
 
 .h3Trabajo {
