@@ -1,17 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
-
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-body {
-    background-image: linear-gradient(  #80d0c7 0%, #13547a 100%);
-    background-repeat: no-repeat;
+.header {
+    background-color:#13547a;
 }
 
-/*FORMULARIO*/
+li .nav-link {
+    color:white;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+li .nav-link:hover {
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+.mainFondo {
+    background-color: #80d0c7;
+}
+
+/*CONTACTO*/
 #nombre, #email, #telefono, #mensaje {
     width: 300px;
 }
@@ -20,12 +29,27 @@ label {
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
 }
+input, textarea {
+    border-style: none;
+    border: 1px solid grey;
+    
+}
 
+#botonEnviar {
+    background-color: #efefef;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
 
-
+#botonEnviar:hover {
+    box-shadow: 1px 1px 1px black;
+}
 
 /*FOOTER*/
 
+.fondoFooter{
+    background-color:#13547a;
+}
 footer, .pie-pagina{
     width: 100%;
     background-color:#13547a;
@@ -91,3 +115,18 @@ footer, .pie-pagina{
         padding: 35px 0px;
     } 
 }
+
+/*
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*FORMULARIO
+
+
+
+
+

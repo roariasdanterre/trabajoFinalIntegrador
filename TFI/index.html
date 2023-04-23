@@ -10,23 +10,23 @@
     
     <!--Iconos-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
   </head>
 
   <body>
-    <div class="container">
-        <!--Header y nav-->
-        <div class="row">                
-            <div class="header text-center">
-                <img src="clima global 2.png" alt="">
-            </div>
-        </div>
 
-        <div class="row">
-            <nav class="navbar navbar-expand-md  navbar-expand navbar-light bg-light rounded-4">
+<!--HEADER-->
+    <div class="container-fluid">
+        <div class="row text-center pt-3 header">
+            <a href="index.html">
+                <img src="clima global 2.png" alt="">
+            </a>
+
+            <nav class="navbar navbar-expand-md  navbar-expand navbar-light rounded-4">
                 <div class="container">
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav w-100 justify-content-around">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="index.html">Inicio</a>
                     </li>
                     <li>
@@ -39,61 +39,71 @@
                 </div>
                 </div>
             </nav>
-        </div>
-        
-        
-        <div class="row mt-5">
-            <div class="col text-center">
-                <h1 class="text-center">El Clima</h1>
-                <img id="icon" src="" alt="icon_clima">
-                <div id="temperatura"></div><br>
-                <div id="humedad"></div><br>
-                <div id="velocidad-viento"></div><br>
-                <div id="tempearatura_max"></div><br>
-                <div id="temperatura_min"></div><br>
-                
-                <form id="formulario">
-                    <label for="ciudad">Ciudad:</label>
-                    <input type="text" id="ciudad" name="ciudad">
-                    <button type="submit">Obtener clima</button>
-                </form>
-            </div>
-
-        </div>  
-
-
+        </div>    
     </div>
 
-            <!--PIE DE PÁGINA-->
-    <div class="container-fluid">
-        <footer class="pie-pagina">
-            <div class="grupo-1">
-            <div class="box">
-                <figure>
-                    <a href="#">
-                        <img src="clima global 2.png" alt="Clima Global">
-                    </a>
-                </figure>
-            </div>
-            <div class="box">
-                <h2>Sobre Nosotros</h2>
-                <p>Somos una empresa que quiere cambiar la forma de saber del clima.</p>
-                <p>Ahora lo puedes ver desde tus dispositivos en vivo y directo.</p>
-            </div>
-            <div class="box">
-                <h2>Síguenos</h2>
-                <div class="red-social">
-                    <i class='bx bxl-facebook'></i>
-                    <i class='bx bxl-twitter' ></i>
-                    <i class='bx bxl-instagram' ></i>
-                    <i class='bx bxl-linkedin' ></i>
+<!--MAIN-->
+    <div class="container-fluid mainFondo">
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col text-center">
+                    <h1 class="text-center">El Clima</h1>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-brightness-alt-high mt-1 mb-1" viewBox="0 0 16 16">
+                        <path d="M8 3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3zm8 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zm-13.5.5a.5.5 0 0 0 0-1h-2a.5.5 0 0 0 0 1h2zm11.157-6.157a.5.5 0 0 1 0 .707l-1.414 1.414a.5.5 0 1 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm-9.9 2.121a.5.5 0 0 0 .707-.707L3.05 5.343a.5.5 0 1 0-.707.707l1.414 1.414zM8 7a4 4 0 0 0-4 4 .5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5 4 4 0 0 0-4-4zm0 1a3 3 0 0 1 2.959 2.5H5.04A3 3 0 0 1 8 8z"/>
+                    </svg>
+
+                    <h5 class="pb-3">Recibe información sobre el clima</h5>
+
+                    <form id="formulario" class="text-center pb-3">
+                        <label for="ciudad">Ciudad:</label>
+                        <input type="text" id="ciudad" name="ciudad">
+                        <button type="submit">Obtener clima</button>
+                    </form>
+                    
+                    <div id="temperatura"></div><br>
+                    <div id="humedad"></div><br>
+                    <div id="velocidad-viento"></div><br>
+                    <div id="tempearatura_max"></div><br>
+                    <div id="temperatura_min"></div><br>
                 </div>
             </div>
-            </div>
-            <div class="grupo-2">
-                <small>&copy; 2023 <b>Clima Global</b> - Todos los Derechos Reservados.</small>
-            </div>
-        </footer>
+        </div>
+    </div>
+
+
+<!--PIE DE PÁGINA-->
+    <div class="container-fluid fondoFooter">
+        <div class="container">
+            <footer class="pie-pagina">
+                <div class="grupo-1">
+                <div class="box">
+                    <figure>
+                        <a href="#">
+                            <img src="clima global 2.png" alt="Clima Global">
+                        </a>
+                    </figure>
+                </div>
+                <div class="box">
+                    <h2 class="text-center">Sobre Nosotros</h2>
+                    <p>Somos una empresa que quiere cambiar la forma de saber del clima.</p>
+                    <p>Ahora lo puedes ver desde tus dispositivos en vivo y directo.</p>
+                </div>
+                <div class="box">
+                    <h2>Síguenos</h2>
+                    <div class="red-social">
+                        <i class='bx bxl-facebook'></i>
+                        <i class='bx bxl-twitter' ></i>
+                        <i class='bx bxl-instagram' ></i>
+                        <i class='bx bxl-linkedin' ></i>
+                    </div>
+                </div>
+                </div>
+                <div class="grupo-2">
+                    <small>&copy; 2023 <b>Clima Global</b> - Todos los Derechos Reservados.</small>
+                </div>
+            </footer>
+        </div>
     </div>
 
 

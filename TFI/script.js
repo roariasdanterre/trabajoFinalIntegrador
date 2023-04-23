@@ -34,8 +34,8 @@ formulario.validate({
         $('#temperatura').text(`Temperatura: ${temperatura}°C`);
         $('#humedad').text(`Humedad: ${humedad}%`);
         $('#velocidad-viento').text(`Velocidad del viento: ${velocidadViento} km/h`);
-        $('#tempearatura_max').text(`máxima: ${temperaturaMaxima}°C`);
-        $('#temperatura_min').text(`minima: ${temperaturaMinina}°C`);
+        $('#tempearatura_max').text(`Máxima: ${temperaturaMaxima}°C`);
+        $('#temperatura_min').text(`Mínima: ${temperaturaMinina}°C`);
         $('#icon').attr('src', urlIcono);
 
 
