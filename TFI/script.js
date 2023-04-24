@@ -28,7 +28,7 @@ formulario.validate({
         const temperaturaMaxima = data.main.temp_max;
         const temperaturaMinina = data.main.temp_min;
         const codigoIcono = data.weather[0].icon;
-        const urlIcono = `http://openweathermap.org/img/wn/${codigoIcono}.png`
+        const urlIcono = `./icons/${codigoIcono}.png`
         console.log(data)
 
         $('#temperatura').text(`Temperatura: ${temperatura}°C`);
